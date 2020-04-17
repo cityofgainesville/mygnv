@@ -1,81 +1,470 @@
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
+	<!-- This is the home page for myGNV engagement.-->
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Engagement with the City of Gainesville" >
+    <meta name = "keywords" content="engagement, events, surveys, city of gainesville, gainesville, florida, feedback, local government, gnv, myGNV">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-</head> 
-<title>myGNV</title>
+	<!-- Start FontAwesome Kit -->
+	<script src="https://kit.fontawesome.com/7c02223738.js" crossorigin="anonymous"></script>
+	<!-- End FontAwesome Kit. -->
+    
+    <!-- Hotjar Tracking Code for https://cityofgainesville.github.io/mygnvfeedback/ -->
+      <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1674954,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+      </script>
+      
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158370608-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-<body>	  
-      <style>
-	  h1 { 
-		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";  
-		font-style: normal; 
-		font-weight: bolder;
-	     }
-	  p  {
-		color : #0F191C;
-		font-family : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
-		font-size : 30px;
-	     }
-	  h2  {
-		color : #0F191C;
-		font-family : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
-		font-size : 1rem;
-		font-style : Italic;
-		font-weight : normal;
-		height: 1.5rem;
-	     }
-	  hr.style1 {
-		border-top: 0.1px solid #8D9297;
-	     }
-	  hr.style2 {
-		border-bottom: 0.1px solid #8D9297;
-	     }
-	  button {
-		background-color: #FFFFFF;
-		border-top : none; border-left : none; border-right : none;
-		border-bottom : 0.1px solid #8D9297;
-		text-align : left;
-		font-size : 1rem;
-		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
-		width : 100%;
-		height : 3rem;
-		padding: 0.7rem;
-		color: #0F191C;
-	    }
-	  </style>
-	<h1 style="font-size: 2.5rem;line-height: 3rem;text-indent: 0.5rem;">
-		myGNV
-	</h1>
-	<h2 style="line-height: 1rem; text-indent: 0.5rem;">myGNV main menu</h2>  
-</body>  
-<h1 style="background-color:#EDEFF0; padding: 0.5rem; border-left: none; border-top: 0.1px solid #8D9297; margin: 0px;font-size: 1rem;line-height: 0.8rem;">
- General
-</h1>
-<div>
-  	<form action="https://cityofgainesville.github.io/mygnv/pay.html">
-    		<button type="submit" value=<p>Pay - Mobile</p></form>  
+          gtag('config', 'UA-158370608-1');
+      </script>
+
+
+	
+
+    <title>myGNV</title>
+  </head>
+<!-- Start some CSS edits for the jumbotron (the hero image with the statGNV title) and the background for the header and footer following the city's color guidelines.-->
+<style>
+.jumbotron {
+      background-image: url("img/home-dark.jpg");
+      background-size: cover;
+      height: 15rem;
+      padding-top: 2.5rem;
+    }
+.bg-beta {
+	  background: #59B9DE;
+	}
+.bg-blue-cool-90 {
+	  background: #0F191C;
+	}
+.navbar-dark {
+		background: #0F191C;
+	}
+.cog-coutline {
+        outline: #0F191C;
+    }
+.bg-cog-jade {
+        background: #1bbaaa;
+        opacity: 0.5;
+    }
+.text-cog-black {
+        color: #000;
+        opacity: 1 !important;
+    }
+    
+.text-cog-jade {
+        color: #1DC2AE !important;
+    }
+    
+body {
+    background: #F5F6F7;
+    }
+
+.margins{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    }
+    
+.margins2{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    }
+    
+.margins3{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    }
+   
+.bg-header{
+    background: #E0F7F6 !important;    
+    }
+    
+.bg-section1{
+    background: #EDEFF0 !important;    
+    }
+    
+.bg-section2{
+    background: #E0F7F6 !important;    
+    }
+
+.bg-section3{
+    background: #EDEFF0 !important;    
+    }
+    
+a:link{
+    color: black;
+    }
+
+a:hover{
+    color: #1DC2AE;   
+    }
+    
+a:visited{
+    color: black;   
+    }
+    
+</style>
+<!-- End CSS edits. -->
+
+<body>
+<!-- This is where the temporary blue bar for myGNV beta starts: -->
+<nav class="container-fluid bg-beta" style="height: 1.7rem">
+  <span class="text-left" style="color: white">
+	  <p class="font-italic"><strong>myGNV Beta </strong><a href="mailto:designGNV@cityofgainesville.org" style="color: white; text-decoration: underline">Email us</a> with feedback.</p>
+  </span>
+</nav>
+<!-- This is where the temporary blue bar ends and the site's navbar starts: -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-blue-cool-90">
+  <a class="navbar-brand bg-blue-cool-90" href="index.html"><h4 style="font-weight: bolder; font-color: white;">myGNV</h4></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse navbar-dark bg-blue-cool-90" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+	  <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+	  <!--li class="nav-item">
+        <a class="nav-link disabled" href="#">Tutorials</a>
+      </li-->
+    </ul>
+  </div>
+</nav>
+<!-- This is where the site's navbar ends. -->
+    
+    
+<!--Header-->
+<div class="container-fluid m-0 bg-header">
+  <div class="text-center">
+    <br><br>
+      <h1>We Want to Hear from You!</h1>
+    <br><br><br>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-2">
+        <div class="card text-center bg-header border-0" href="#section1">
+        <a href="#section1">
+            <i class="fal fa-laptop fa-5x" aria-hidden="true"></i> 
+            <br><br>
+            <h4>Online</h4>
+        </a>
+            <br><br>
+        </div>
+    </div> 
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-2">
+        <div class="card text-center bg-header border-0" href="#section1">
+        <a href="#section2">
+            <i class="fal fa-users fa-5x" aria-hidden="true"></i> 
+            <br><br>
+            <h4>In-Person</h4>
+        </a>
+            <br><br>
+        </div>
+    </div>
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-2">
+        <div class="card text-center bg-header border-0" href="#section1">
+        <a href="#section3">
+            <i class="fal fa-sparkles fa-5x" aria-hidden="true"></i> 
+            <br><br>
+            <h4>Test New Designs</h4>
+        </a>
+            <br><br>
+        </div>
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
 </div>
-<div>
-  	<form action="https://cityofgainesville.github.io/mygnv/pay-website.html">
-    		<button type="submit" value=<p>Pay - Website</p></form>  
-</div>
-<div>
-  	<form action="https://cityofgainesville.github.io/mygnv/discover.html">
-    		<button type="submit" value=<p>Discover - Mobile</p></form>  
-</div>
-<div>
-  	<form action="https://cityofgainesville.github.io/mygnv/discover-website.html">
-    		<button type="submit" value=<p>Discover - Website</p></form>  
-</div>
+<!--End Header-->
+    
+
+
+    
+    
+<!--First Row-->
+<div class="container-fluid m-0 bg-section1 text-center">   
+    <br><br>
+    <div class="row ml-5 mr-5 text-center" id="section1">
+          <br>
+        <div class="col-sm text-center">
+          <h2 class="text-center">Online Surveys and Studies</h2>
+        </div>
+          <br>
+    </div>
+    
+<br><br>
+    
+     <div class="row ml-5 mr-5">
+           <div class="col-sm-6 text-center">            				
+                <div class="card h-100">
+                <br>
+            <div class="card-title">
+                <h4 class="card-title text-center"><strong>Draft Housing Action Plan</strong></h4>
+			<div class="card-body">
+                <i class="fal fa-home-lg-alt fa-4x" aria-hidden="true"></i>
+                <br><br>
+                <p class="card-text text-left">A draft Housing Action Plan is available for review online. The draft includes recommendations that offer eight strategies to address the challenges the City of Gainesville faces with affordable housing development including the financing and ensuring long-term affordability of units. <br><br> To schedule a neighborhood or group meeting, or to provide feedback, please contact Phimetto Lewis at 393-8862. A telephone town hall is also being scheduled.</p>
+                      <a class="btn btn-outline-info align-bottom" style="vertical-align: bottom" href="http://www.cityofgainesville.org/Portals/0/house/HousingActionPlan-Draft.pdf" target="_blank">
+						<span>Click Here</span>
+	  			      </a>
+                   </div>
+			    </div>
+                </div>
+		   </div>  	
+           <div class="col-sm-6 text-center">            				
+                <div class="card h-100">
+                <br>
+            <div class="card-title">
+                <h4 class="card-title text-center"><strong>Website Feedback</strong></h4>
+			<div class="card-body">
+                <i class="fal fa-desktop fa-4x" aria-hidden="true"></i>
+                <br><br>
+                <p class="card-text text-left">This survey is to help us understand your experience with the City of Gainesville website. It should take approximately 5-10 minutes. We will be incorporating your feedback into the website redesign.</p>
+                <br><br><br><br><br>
+                      <a class="btn btn-outline-info align-bottom" style="vertical-align: bottom" href="https://forms.gle/GcFrcomXC1XRi91r7" target="_blank">
+						<span>Submit Feedback</span>
+	  			      </a>
+                   </div>
+			    </div>
+                </div>
+		   </div>
+       </div>
+    
+    <br>
+    
+       <div class="row ml-5 mr-5">
+           <div class="col-sm-6 text-center">            				
+                <div class="card h-100">
+                <br>
+            <div class="card-title">
+                <h4 class="card-title text-center"><strong>Join our Design Feedback Group</strong></h4>
+			<div class="card-body">
+                <i class="fal fa-comments fa-4x" aria-hidden="true"></i>
+                <br><br>
+                <p class="card-text text-left">We want to hear your voice. The City of Gainesville is redesigning local government through neighbor-centered design and innovation. As we tackle tough problems in our city, we invite those who live, work, and study here to participate and collaborate on new solutions. Sign up to be notified of surveys and design testing you can complete for the City of Gainesville.</p>
+                      <a class="btn btn-outline-info align-bottom" style="vertical-align: bottom" href="https://cityofgainesville.typeform.com/to/hu5Mcz" target="_blank">
+						<span>Sign Up Here</span>
+	  			      </a>
+                   </div>
+			    </div>
+                </div>
+		   </div>
+           <!--<div class="col-sm-6 text-center">            				
+                <div class="card h-100">
+                <br>
+            <div class="card-title">
+                <h4 class="card-title text-center"><strong>Join our Design Feedback Group</strong></h4>
+			<div class="card-body">
+                <i class="fal fa-comments fa-4x" aria-hidden="true"></i>
+                <br><br>
+                <p class="card-text text-left">We want to hear your voice. The City of Gainesville is redesigning local government through neighbor-centered design and innovation. As we tackle tough problems in our city, we invite those who live, work, and study here to participate and collaborate on new solutions. Sign up to be notified of surveys and design testing you can complete for the City of Gainesville.</p>
+                      <a class="btn btn-outline-info align-bottom" style="vertical-align: bottom" href="https://cityofgainesville.typeform.com/to/hu5Mcz" target="_blank">
+						<span>Sign Up Here</span>
+	  			      </a>
+                   </div>
+			    </div>
+                </div>
+		   </div>-->
+       </div>
+
+    <br><br>
+    </div>
+<!--End First Row-->
+    
+
+    
+<!--Second Row-->
+    
+<div class="container-fluid m-0 bg-section2">  
+    <br><br>
+    <div class="row ml-5 mr-5" id="section2">
+          <br>
+        <div class="col-sm text-center">
+          <h2>In-person Events</h2>
+        </div>
+          <br>
+    </div>
+    <br>    
+  <div class="row ml-5 mr-5">
+    <div class="col-sm">
+     <div class="card bg-info h-100" outline-color: #0F191c>
+         <!--<h4 class="card-title text-center text-white mt-2">GCRA Final Draft Reinvestment Plan Workshop</h4>-->
+            <div class="card h-100">
+            <div class="ml-5 mr-5 mt-5">                       
+             <div class="col-sm">
+<!--EVENT DESCRIPTION-->                    
+                 <p class="card-text text-center">No Upcoming Events</p>
+             <br><br> 
+            </div>
+            </div>
+            </div>
+        </div>
+      </div>
+      <!--<div class="col-sm">
+      <div class="card bg-info h-100" outline-color: #0F191c>
+         <h4 class="card-title text-center text-white mt-2">2020 Census Block Party</h4>
+            <div class="card h-100">
+            <div class="ml-5 mr-5 mt-5">                       
+             <div class="col-sm">
+<!--EVENT DESCRIPTION-->                    
+                 <!--<p class="card-text">The City of Gainesville is spreading the word about the importance of the 2020 U.S. Census and working to ensure a complete count. The event features music, free pizza from Papa John's, an opportunity to win concert tickets and more. <br><br> <strong>Friday, January 31st, 2020 from 4-7pm</strong> <br><br> Location: <a href="https://goo.gl/maps/ZHoMgsdpWaD2r6i79" class="text-cog-jade" style="text-decoration: underline">Northeast 8th Ave at the corner near Bartley Temple</a></p>
+             <br><br> 
+            </div>
+            </div>
+            </div>
+        </div>
+      </div>-->
+  </div>
+
+<br><br>
+    
+</div> 
+<!--End Second Row-->
+    
+    
+<!--Third Row-->
+    
+<div class="container-fluid m-0 bg-section3"> 
+    <br><br>
+    <div class="row ml-5 mr-5" id="section3">
+          <br>
+        <div class="col-sm text-center">
+          <h2>Test New Designs</h2>
+        </div>
+    </div>   
 <br>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <div class="row ml-5 mr-5">
+          	<div class="col-sm-6 text-center">            				
+                <div class="card h-100">
+                <br>
+            <div class="card-title">
+                <h4 class="card-title text-center"><strong>welcomeGNV</strong></h4>
+			<div class="card-body">
+                <i class="fal fa-handshake fa-4x" aria-hidden="true"></i>
+                <br><br>
+                <p class="card-text text-left">This website is meant to help new residents and students get settled into Gainesville. Explore the site and submit feedback by clicking on the blue bar at the top of the page.</p>
+                <br>
+                      <a class="btn btn-outline-info align-bottom" style="vertical-align: bottom" href="https://cityofgainesville.github.io/welcomeGNV/" target="_blank">
+						<span>Click Here</span>
+	  			      </a>
+                   </div>
+			    </div>
+                </div>
+		   </div>
+           <div class="col-sm-6 text-center">            				
+                <div class="card h-100">
+                <br>
+            <div class="card-title">
+                <h4 class="card-title text-center"><strong>statGNV</strong></h4>
+			<div class="card-body">
+                <i class="fal fa-chart-line fa-4x" aria-hidden="true"></i>
+                <br><br>
+                <p class="card-text text-left">statGNV lets you explore the City of Gainesville's data through interactive charts, graphs, and maps. You can now easily understand complex city data and track important trends in areas such as public safety, basic city services, human services, economic development, and others.</p>
+                      <a class="btn btn-outline-info align-bottom" style="vertical-align: bottom" href="https://stat.cityofgainesville.org/" target="_blank">
+						<span>Click Here</span>
+	  			      </a>
+                   </div>
+			    </div>
+                </div>
+		   </div>
+       </div>
+    <br><br>
+    
+       <div class="row ml-5 mr-5">
+          	<div class="col-sm-6 text-center">            				
+                <div class="card h-100">
+                <br>
+            <div class="card-title">
+                <h4 class="card-title text-center"><strong>Resource Finder</strong></h4>
+			<div class="card-body">
+                <i class="fal fa-hands-heart fa-5x" aria-hidden="true"></i>
+                <br><br>
+                <p class="card-text text-left">The Resource Finder helps people search for resources available to them in the Gainesville Area. </p>
+                      <a class="btn btn-outline-info align-bottom" style="vertical-align: bottom" href="https://mygnv.herokuapp.com/home/search" target="_blank">
+						<span>Click Here</span>
+	  			      </a>
+                   </div>
+			    </div>
+                </div>
+		   </div>
+           <!--<div class="col-sm-6 text-center">            				
+                <div class="card h-100">
+                <br>
+            <div class="card-title">
+                <h4 class="card-title text-center"><strong>TITLE</strong></h4>
+			<div class="card-body">
+                <i class="fal fa-farm fa-5x" aria-hidden="true"></i>
+                <br><br>
+                <p class="card-text text-left">DESCRIPTION</p>
+                      <a class="btn btn-outline-info align-bottom" style="vertical-align: bottom" href="ADD LINK" target="_blank">
+						<span>BUTTON TEXT</span>
+	  			      </a>
+                   </div>
+			    </div>
+                </div>
+		   </div>-->
+       </div>
+       <br><br>
+    
+</div> 
+<!--End Third Row-->
+
+    
+<!--Footer-->      
+    <nav class="navbar navbar-expand-lg bg-blue-cool-90">
+       <div class="col-sm text-left">
+
+           ;987<a class="navbar-brand" href="https://www.cityofgainesville.org/"><img src="img/cog-white-twolines.png" width="200" height="50" alt="City of Gainesville"></a>
+           <p class="text-left text-white">&copy; City of Gainesville 2020<a href="#" ></a></p>
+        </div>
+    
+        <div class="col-sm text-right">
+				<p class="font-weight-bold; text-light">City's social media channels:</p>
+      			<h3><a class="text-light" target="_blank" href="https://facebook.com/GainesvilleFL/?"><i class="fab fa-facebook"></i></a>
+				<span></span>
+				<a class="text-light" target="_blank" href="https://twitter.com/gainesvillegov?"><i class="fab fa-twitter"></i></a>
+				<span></span>
+				<a class="text-light" target="_blank" href="https://www.youtube.com/user/gainesvillepio?"><i class="fab fa-youtube"></i></a>
+				<span></span>
+				<a class="text-light" target="_blank" href="https://www.flickr.com/photos/gainesville/"><i class="fab fa-flickr"></i></a></h3>
+				<p class="font-weight-bold; text-light"><a href="mailto:designGNV@cityofgainesville.org" style="color: white; text-decoration: none">Contact us</a></p>
+        </div>
+    </nav>
+<!--End Footer-->  
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap-4.3.1.js"></script>
+  </body>
+
 </html>
